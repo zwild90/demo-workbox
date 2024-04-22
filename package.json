@@ -1,0 +1,21 @@
+{
+  "name": "workbox-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd web && workbox generateSW workbox-config.js && cd ..",
+    "server": "node index.js",
+    "image-server": "node image-server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "workbox-cli": "^7.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

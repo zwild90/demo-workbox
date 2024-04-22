@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <h2>Sample Form</h2>
+  <form action="#" method="POST">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="number">Number:</label>
+      <input type="tel" id="number" name="number" pattern="[0-9]{10}" required>
+      <small>Format: 1234567890</small>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <p>Choose one option:</p>
+      <input type="radio" id="option1" name="option" value="option1">
+      <label for="option1">Option 1</label><br>
+      <input type="radio" id="option2" name="option" value="option2">
+      <label for="option2">Option 2</label><br>
+      <input type="radio" id="option3" name="option" value="option3">
+      <label for="option3">Option 3</label>
+    </div>
+    <button type="submit">Submit</button>
+   
+  </form>
+
+  <button id="hard-reload-button" type="button">Hard Reload</button>
+  <br/> this is an update
+  <button id="delete-cache-button" type="button">Delete Cache</button>
+  <br/>
+  <img src="http://localhost:3001/jpeg-1.jpeg" width="140px" height="100px"/>
+  
+  <script src="app.js"></script>
+</body>
+</html>
